@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LiturgyScheduler.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+            
+            <Label
+                Text="Hello, Michael!"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="AddMassCaptain"
+                Text="Add New Mass Captain"
+                SemanticProperties.Hint="Takes you to a page where you can add a new Mass Captain"
+                Clicked="OnAddMassCaptain"
+                HorizontalOptions="Center" />
+            
+            <Button
+                x:Name="ModifyMassCaptain"
+                Text="Modify An Existing Mass Captain"
+                SemanticProperties.Hint="Takes you to a page where you can modify an existing Mass Captain"
+                Clicked="OnModifyMassCaptain"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="AddParent"
+                Text="Add A Parent For A Mass Captain"
+                SemanticProperties.Hint="Takes you to a page where you can add a parent for a Mass Captain"
+                Clicked="OnAddParent"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
